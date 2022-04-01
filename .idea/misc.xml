@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Study/MyUdacityProjects/Project2/starter/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Study/MyUdacityProjects/Project2/starter/app/src/main/res/layout/asteroid_list_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Study/MyUdacityProjects/Project2/starter/app/src/main/res/layout/fragment_detail.xml" value="0.25416666666666665" />
+        <entry key="..\:/Study/MyUdacityProjects/Project2/starter/app/src/main/res/layout/fragment_main.xml" value="0.11302083333333333" />
         <entry key="..\:/Study/MyUdacityProjects/Project2/starter/app/src/main/res/menu/main_overflow_menu.xml" value="0.25416666666666665" />
       </map>
     </option>
