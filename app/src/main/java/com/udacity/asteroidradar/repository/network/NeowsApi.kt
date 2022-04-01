@@ -3,12 +3,10 @@ package com.udacity.asteroidradar.repository.network
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
-import com.udacity.asteroidradar.utilities.Constants
 import com.udacity.asteroidradar.model.PictureOfDay
+import com.udacity.asteroidradar.utilities.Constants
 import kotlinx.coroutines.Deferred
-import okhttp3.OkHttpClient
 import okhttp3.ResponseBody
-import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import retrofit2.converter.scalars.ScalarsConverterFactory
@@ -36,15 +34,6 @@ interface NeowsService {
 private val moshi = Moshi.Builder()
     .add(KotlinJsonAdapterFactory())
     .build()
-
-private val interceptor : HttpLoggingInterceptor = HttpLoggingInterceptor().apply {
-    this.level = HttpLoggingInterceptor.Level.BODY
-}
-
-private val client : OkHttpClient = OkHttpClient.Builder().apply {
-    this.addInterceptor(interceptor)
-}.build()
-
 
 object Network {
     // Configure retrofit to parse JSON and use coroutines

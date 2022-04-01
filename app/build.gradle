@@ -93,6 +93,4 @@ dependencies {
     // Jetpack Compose Integration
     implementation("androidx.navigation:navigation-compose:$androidx_version")
     implementation("io.coil-kt:coil:$coil_version")
-
-    implementation 'com.squareup.okhttp3:logging-interceptor:4.5.0'
 }
